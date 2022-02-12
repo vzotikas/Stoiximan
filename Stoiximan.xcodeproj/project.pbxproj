@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		14954EB927B7E52D00C86282 /* StoiximanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954EB827B7E52D00C86282 /* StoiximanApp.swift */; };
-		14954EBB27B7E52D00C86282 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954EBA27B7E52D00C86282 /* ContentView.swift */; };
 		14954EBD27B7E52E00C86282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14954EBC27B7E52E00C86282 /* Assets.xcassets */; };
 		14954EC027B7E52E00C86282 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14954EBF27B7E52E00C86282 /* Preview Assets.xcassets */; };
+		14954EC727B7E58300C86282 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954EC627B7E58300C86282 /* EventView.swift */; };
+		14954ECF27B7EA1300C86282 /* EventsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954ECE27B7EA1300C86282 /* EventsDataService.swift */; };
+		14954ED127B7EA3900C86282 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954ED027B7EA3900C86282 /* EventsModel.swift */; };
+		14954ED327B7EA5600C86282 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954ED227B7EA5600C86282 /* EventsViewModel.swift */; };
+		14954ED527B7EA7500C86282 /* EventsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954ED427B7EA7500C86282 /* EventsHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14954EB527B7E52D00C86282 /* Stoiximan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stoiximan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14954EB827B7E52D00C86282 /* StoiximanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoiximanApp.swift; sourceTree = "<group>"; };
-		14954EBA27B7E52D00C86282 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14954EBC27B7E52E00C86282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14954EBF27B7E52E00C86282 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14954EC627B7E58300C86282 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		14954ECE27B7EA1300C86282 /* EventsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDataService.swift; sourceTree = "<group>"; };
+		14954ED027B7EA3900C86282 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
+		14954ED227B7EA5600C86282 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		14954ED427B7EA7500C86282 /* EventsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,12 @@
 		14954EB727B7E52D00C86282 /* Stoiximan */ = {
 			isa = PBXGroup;
 			children = (
+				14954ED027B7EA3900C86282 /* EventsModel.swift */,
+				14954ECE27B7EA1300C86282 /* EventsDataService.swift */,
+				14954EC627B7E58300C86282 /* EventView.swift */,
+				14954ED427B7EA7500C86282 /* EventsHomeView.swift */,
+				14954ED227B7EA5600C86282 /* EventsViewModel.swift */,
 				14954EB827B7E52D00C86282 /* StoiximanApp.swift */,
-				14954EBA27B7E52D00C86282 /* ContentView.swift */,
 				14954EBC27B7E52E00C86282 /* Assets.xcassets */,
 				14954EBE27B7E52E00C86282 /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14954EBB27B7E52D00C86282 /* ContentView.swift in Sources */,
+				14954EC727B7E58300C86282 /* EventView.swift in Sources */,
+				14954ECF27B7EA1300C86282 /* EventsDataService.swift in Sources */,
+				14954ED327B7EA5600C86282 /* EventsViewModel.swift in Sources */,
+				14954ED127B7EA3900C86282 /* EventsModel.swift in Sources */,
 				14954EB927B7E52D00C86282 /* StoiximanApp.swift in Sources */,
+				14954ED527B7EA7500C86282 /* EventsHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

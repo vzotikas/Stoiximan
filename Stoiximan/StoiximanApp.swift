@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct StoiximanApp: App {
+    
+    @StateObject private var vm = EventsViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EventsHomeView()
+                .environmentObject(vm)
         }
     }
 }
