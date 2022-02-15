@@ -30,8 +30,8 @@ class EventDataService: ObservableObject {
     @Published var sport: [Sport] = []
 
     func loadData() async throws -> [Sport] {
-//        guard let url = URL(string: "https://618d3aa7fe09aa001744060a.mockapi.io/api/sports")
-        guard let url = URL(string: "http://192.168.1.83:3000/sports")
+        guard let url = URL(string: "https://618d3aa7fe09aa001744060a.mockapi.io/api/sports")
+//        guard let url = URL(string: "http://192.168.1.83:3000/sports")
         else { throw FetchError.badURL }
 
         let urlRequest = URLRequest(url: url)
