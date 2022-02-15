@@ -25,7 +25,6 @@ struct StoiximanApp: App {
                             }.foregroundColor(Color.theme.accent)
                             Image("icon")
                                 .resizable()
-
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 60, height: 40, alignment: .center)
                                 .padding(UIScreen.main.bounds.size.width / 4 + 30)

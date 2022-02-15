@@ -9,11 +9,11 @@ import SwiftUI
 
 struct EventView: View {
     @State var event: Event
+    @State var isFavourite: Bool
     let currentTime = Int(Date().timeIntervalSince1970)
-    var isFavourite: Bool
 
     func toggleStar() {
-        event.isFavourite = isFavourite
+        isFavourite = event.isFavourite
     }
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -44,9 +44,9 @@ struct EventView: View {
                 .frame(width: 100, height: 10)
                 .font(.system(size: 15))
 
-            Image(systemName: event.isFavourite ? "star.fill" : "star")
-                .onTapGesture(perform: toggleStar)
-
+            Image(systemName: self.isFavourite ? "star.fill" : "star")
+                .onTapGesture(perform: { self.isFavourite.toggle() })
+//                .onTapGesture(perform: toggleStar)
                 .padding(.vertical, 6.0)
                 .font(.system(size: 15))
                 .foregroundColor(Color.theme.yellow)

@@ -16,8 +16,10 @@ struct EventRowView: View {
     var body: some View {
         VStack {
             HStack {
-                Image(systemName: "headphones.circle")
-                    .font(.title3)
+                Image("\(sport.sportName)")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 25, height: 25, alignment: .center)
                 Text(sport.sportName)
                     .fontWeight(.bold)
                     .font(.title3)
