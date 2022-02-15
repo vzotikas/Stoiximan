@@ -27,25 +27,24 @@ extension FetchError: CustomStringConvertible {
 }
 
 class EventDataService: ObservableObject {
-    @Published var event: [Response] = []
-    
-    func loadData() async throws -> [Response] {
-        
-        guard let url = URL(string: "https://618d3aa7fe09aa001744060a.mockapi.io/api/sports")
-        else {throw FetchError.badURL}
-        
+    @Published var sport: [Sport] = []
+
+    func loadData() async throws -> [Sport] {
+//        guard let url = URL(string: "https://618d3aa7fe09aa001744060a.mockapi.io/api/sports")
+        guard let url = URL(string: "http://192.168.1.83:3000/sports")
+        else { throw FetchError.badURL }
+
         let urlRequest = URLRequest(url: url)
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
-        
+
         guard (response as? HTTPURLResponse)?.statusCode == 200
-        else { throw FetchError.badResponse}
+        else { throw FetchError.badResponse }
         print(data)
 
-        guard let eventData = try? JSONDecoder().decode([Response].self, from: data)
-        else {throw FetchError.noData}
+        guard let sportData = try? JSONDecoder().decode([Sport].self, from: data)
+        else { throw FetchError.noData }
+        print(sportData)
 
-        print(eventData)
-        
-        return eventData
+        return sportData
     }
 }

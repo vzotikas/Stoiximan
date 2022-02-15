@@ -7,26 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141F4C1527B98FE800D4CC39 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141F4C1427B98FE800D4CC39 /* TimerView.swift */; };
+		141F4C3527BA55F300D4CC39 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141F4C3427BA55F300D4CC39 /* CircleButtonView.swift */; };
 		14954EB927B7E52D00C86282 /* StoiximanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954EB827B7E52D00C86282 /* StoiximanApp.swift */; };
 		14954EBD27B7E52E00C86282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14954EBC27B7E52E00C86282 /* Assets.xcassets */; };
 		14954EC027B7E52E00C86282 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14954EBF27B7E52E00C86282 /* Preview Assets.xcassets */; };
-		14954EC727B7E58300C86282 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954EC627B7E58300C86282 /* EventView.swift */; };
 		14954ECF27B7EA1300C86282 /* EventsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954ECE27B7EA1300C86282 /* EventsDataService.swift */; };
 		14954ED127B7EA3900C86282 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954ED027B7EA3900C86282 /* EventsModel.swift */; };
 		14954ED327B7EA5600C86282 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954ED227B7EA5600C86282 /* EventsViewModel.swift */; };
 		14954ED527B7EA7500C86282 /* EventsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954ED427B7EA7500C86282 /* EventsHomeView.swift */; };
+		14954ED727B800F700C86282 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954ED627B800F700C86282 /* Color.swift */; };
+		14954EDA27B82D7300C86282 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954ED927B82D7300C86282 /* PreviewProvider.swift */; };
+		14954EDC27B8315C00C86282 /* EventRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954EDB27B8315C00C86282 /* EventRowView.swift */; };
+		14954EDE27B9069200C86282 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14954EDD27B9069200C86282 /* EventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		141F4C1427B98FE800D4CC39 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		141F4C3427BA55F300D4CC39 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		14954EB527B7E52D00C86282 /* Stoiximan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stoiximan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14954EB827B7E52D00C86282 /* StoiximanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoiximanApp.swift; sourceTree = "<group>"; };
 		14954EBC27B7E52E00C86282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14954EBF27B7E52E00C86282 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		14954EC627B7E58300C86282 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		14954ECE27B7EA1300C86282 /* EventsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDataService.swift; sourceTree = "<group>"; };
 		14954ED027B7EA3900C86282 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
 		14954ED227B7EA5600C86282 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
 		14954ED427B7EA7500C86282 /* EventsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsHomeView.swift; sourceTree = "<group>"; };
+		14954ED627B800F700C86282 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		14954ED927B82D7300C86282 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		14954EDB27B8315C00C86282 /* EventRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowView.swift; sourceTree = "<group>"; };
+		14954EDD27B9069200C86282 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		14E7A69727BC1E5300FE8217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +70,12 @@
 		14954EB727B7E52D00C86282 /* Stoiximan */ = {
 			isa = PBXGroup;
 			children = (
-				14954ED027B7EA3900C86282 /* EventsModel.swift */,
-				14954ECE27B7EA1300C86282 /* EventsDataService.swift */,
-				14954EC627B7E58300C86282 /* EventView.swift */,
-				14954ED427B7EA7500C86282 /* EventsHomeView.swift */,
-				14954ED227B7EA5600C86282 /* EventsViewModel.swift */,
+				14E7A69727BC1E5300FE8217 /* Info.plist */,
+				14E7A69627BBD81B00FE8217 /* Services */,
+				14E7A69527BBD80C00FE8217 /* Views */,
+				14E7A69427BBD80600FE8217 /* ViewModels */,
+				14E7A69327BBD7FD00FE8217 /* Models */,
+				14954ED827B82B4500C86282 /* Extensions */,
 				14954EB827B7E52D00C86282 /* StoiximanApp.swift */,
 				14954EBC27B7E52E00C86282 /* Assets.xcassets */,
 				14954EBE27B7E52E00C86282 /* Preview Content */,
@@ -77,6 +89,51 @@
 				14954EBF27B7E52E00C86282 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14954ED827B82B4500C86282 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				14954ED627B800F700C86282 /* Color.swift */,
+				14954ED927B82D7300C86282 /* PreviewProvider.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		14E7A69327BBD7FD00FE8217 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14954ED027B7EA3900C86282 /* EventsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14E7A69427BBD80600FE8217 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				14954ED227B7EA5600C86282 /* EventsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		14E7A69527BBD80C00FE8217 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14954EDD27B9069200C86282 /* EventView.swift */,
+				14954ED427B7EA7500C86282 /* EventsHomeView.swift */,
+				141F4C1427B98FE800D4CC39 /* TimerView.swift */,
+				14954EDB27B8315C00C86282 /* EventRowView.swift */,
+				141F4C3427BA55F300D4CC39 /* CircleButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14E7A69627BBD81B00FE8217 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14954ECE27B7EA1300C86282 /* EventsDataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,12 +206,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14954EC727B7E58300C86282 /* EventView.swift in Sources */,
+				141F4C1527B98FE800D4CC39 /* TimerView.swift in Sources */,
 				14954ECF27B7EA1300C86282 /* EventsDataService.swift in Sources */,
+				14954ED727B800F700C86282 /* Color.swift in Sources */,
+				14954EDC27B8315C00C86282 /* EventRowView.swift in Sources */,
 				14954ED327B7EA5600C86282 /* EventsViewModel.swift in Sources */,
 				14954ED127B7EA3900C86282 /* EventsModel.swift in Sources */,
+				14954EDA27B82D7300C86282 /* PreviewProvider.swift in Sources */,
 				14954EB927B7E52D00C86282 /* StoiximanApp.swift in Sources */,
 				14954ED527B7EA7500C86282 /* EventsHomeView.swift in Sources */,
+				14954EDE27B9069200C86282 /* EventView.swift in Sources */,
+				141F4C3527BA55F300D4CC39 /* CircleButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,11 +350,11 @@
 				DEVELOPMENT_TEAM = B637BE2R39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stoiximan/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,11 +379,11 @@
 				DEVELOPMENT_TEAM = B637BE2R39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stoiximan/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,7 +393,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

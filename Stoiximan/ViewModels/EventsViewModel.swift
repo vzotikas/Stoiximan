@@ -8,9 +8,8 @@
 import Foundation
 
 class EventsViewModel: ObservableObject {
-    @Published var events: [Response] = []
-    
-    private let eventData = EventDataService()
+    @Published var sports: [Sport] = []
+    private let sportData = EventDataService()
     
     init() { Task {
         await addSubscribers()
@@ -18,10 +17,10 @@ class EventsViewModel: ObservableObject {
     
     func addSubscribers() async {
         do {
-            let loadedEvents = try await eventData.loadData()
+            let loadedSpots = try await sportData.loadData()
             
             DispatchQueue.main.async {
-                self.events = loadedEvents
+                self.sports = loadedSpots
             }
         }
         catch {
