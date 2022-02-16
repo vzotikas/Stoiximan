@@ -8,15 +8,8 @@
 import SwiftUI
 
 struct EventView: View {
-//    @State var event: Event
     let event: Event
-//    @State var isFavourite: Bool
     let currentTime = Int(Date().timeIntervalSince1970)
-
-//    func toggleStar() {
-//        isFavourite = event.isFavourite
-//    }
-
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     var body: some View {
@@ -42,12 +35,6 @@ struct EventView: View {
                 .lineLimit(1)
                 .frame(width: 100, height: 10)
                 .font(.system(size: 15))
-//            Image(systemName: self.isFavourite ? "star.fill" : "star")
-//                .onTapGesture(perform: { self.isFavourite.toggle() })
-////                .onTapGesture(perform: toggleStar)
-//                .padding(.vertical, 6.0)
-//                .font(.system(size: 15))
-//                .foregroundColor(Color.theme.yellow)
         }
     }
 }

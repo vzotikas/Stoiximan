@@ -12,6 +12,7 @@ struct EventRowView: View {
     @State private var showEvents: Bool = true
     @State private var selectedEvent: Event? = nil
     @State var sport: Sport
+    @State var selectedEvents = [""]
 
     var body: some View {
         VStack {
@@ -48,15 +49,14 @@ struct EventRowView: View {
                         ForEach(sport.events) { event in
                             VStack {
                                 EventView(event: event)
-                                    .onTapGesture(perform: { selectedEvent = event; sport.events.remove(at: sport.events.firstIndex(where: { $0 == event }) ?? 0); sport.events.insert(event, at: 0) })
-                                Image(systemName: selectedEvent?.id == event.id ? "star.fill" : "star")
+                                    .onTapGesture(perform: selectedEvents.contains(event.eventId) ? { selectedEvent = event; selectedEvents.remove(at: selectedEvents.firstIndex(where: { $0 == event.eventId }) ?? 0); sport.events.remove(at: sport.events.firstIndex(where: { $0 == event }) ?? 0); sport.events.insert(event, at: sport.events.count) } : { selectedEvent = event; selectedEvents.insert(selectedEvent?.eventId ?? "0", at: 0); sport.events.remove(at: sport.events.firstIndex(where: { $0 == event }) ?? 0); sport.events.insert(event, at: 0) })
+                                Image(systemName: selectedEvents.contains(event.eventId) ? "star.fill" : "star")
                                     .padding(.vertical, 1.0)
                                     .font(.system(size: 15))
                                     .foregroundColor(Color.theme.yellow)
                             }
                             .frame(width: 150, height: 90)
                             .padding(.vertical, 8.0)
-
                             .background(
                                 RoundedRectangle(cornerRadius: 20)
 
