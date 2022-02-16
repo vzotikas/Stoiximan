@@ -8,25 +8,25 @@
 import SwiftUI
 
 struct EventView: View {
-    @State var event: Event
-    @State var isFavourite: Bool
+//    @State var event: Event
+    let event: Event
+//    @State var isFavourite: Bool
     let currentTime = Int(Date().timeIntervalSince1970)
 
-    func toggleStar() {
-        isFavourite = event.isFavourite
-    }
+//    func toggleStar() {
+//        isFavourite = event.isFavourite
+//    }
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     var body: some View {
         let timeRemaining = event.eventStartTime - self.currentTime
+        let str = event.eventName
+        let team = str.components(separatedBy: "-")
 
         VStack(alignment: .center, spacing: 2.0) {
             TimerView(timeRemaining: timeRemaining)
                 .padding(.vertical, 6.0)
-
-            let str = event.eventName
-            let team = str.components(separatedBy: "-")
             Text(team[0])
                 .foregroundColor(Color.white)
                 .lineLimit(1)
@@ -40,31 +40,21 @@ struct EventView: View {
             Text(team[1])
                 .foregroundColor(Color.white)
                 .lineLimit(1)
-
                 .frame(width: 100, height: 10)
                 .font(.system(size: 15))
-
-            Image(systemName: self.isFavourite ? "star.fill" : "star")
-                .onTapGesture(perform: { self.isFavourite.toggle() })
-//                .onTapGesture(perform: toggleStar)
-                .padding(.vertical, 6.0)
-                .font(.system(size: 15))
-                .foregroundColor(Color.theme.yellow)
-
-        }.frame(width: 150, height: 90)
-            .padding(.vertical, 8.0)
-
-            .background(
-                RoundedRectangle(cornerRadius: 20)
-
-                    .foregroundColor(Color.theme.blueMedium)
-            )
+//            Image(systemName: self.isFavourite ? "star.fill" : "star")
+//                .onTapGesture(perform: { self.isFavourite.toggle() })
+////                .onTapGesture(perform: toggleStar)
+//                .padding(.vertical, 6.0)
+//                .font(.system(size: 15))
+//                .foregroundColor(Color.theme.yellow)
+        }
     }
 }
 
 struct EventView_Previews: PreviewProvider {
     static var previews: some View {
-        EventView(event: dev.event, isFavourite: false)
+        EventView(event: dev.event)
             .preferredColorScheme(.dark)
     }
 }

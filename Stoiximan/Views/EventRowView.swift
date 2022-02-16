@@ -10,8 +10,8 @@ import SwiftUI
 
 struct EventRowView: View {
     @State private var showEvents: Bool = true
+    @State private var selectedEvent: Event? = nil
     @State var sport: Sport
-    @State var isFavourite: Bool = false
 
     var body: some View {
         VStack {
@@ -46,12 +46,26 @@ struct EventRowView: View {
                 ScrollView(.horizontal, showsIndicators: false, content: {
                     HStack(spacing: 10) {
                         ForEach(sport.events) { event in
-                            EventView(event: event, isFavourite: isFavourite)
-                                .onTapGesture(perform: { sport.events.remove(at: sport.events.firstIndex(where: { $0 == event }) ?? 0); sport.events.insert(event, at: 0) })
+                            VStack {
+                                EventView(event: event)
+                                    .onTapGesture(perform: { selectedEvent = event; sport.events.remove(at: sport.events.firstIndex(where: { $0 == event }) ?? 0); sport.events.insert(event, at: 0) })
+                                Image(systemName: selectedEvent?.id == event.id ? "star.fill" : "star")
+                                    .padding(.vertical, 1.0)
+                                    .font(.system(size: 15))
+                                    .foregroundColor(Color.theme.yellow)
+                            }
+                            .frame(width: 150, height: 90)
+                            .padding(.vertical, 8.0)
+
+                            .background(
+                                RoundedRectangle(cornerRadius: 20)
+
+                                    .foregroundColor(Color.theme.blueMedium)
+                            )
                         }
                     }
                     .padding(.leading)
-                    .frame(height: showEvents ? 100 : 0)
+                    .frame(height: showEvents ? 110 : 0)
                 })
             }
         }

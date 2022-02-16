@@ -39,11 +39,11 @@ class EventDataService: ObservableObject {
 
         guard (response as? HTTPURLResponse)?.statusCode == 200
         else { throw FetchError.badResponse }
-        print(data)
+//        print(data)
 
         guard let sportData = try? JSONDecoder().decode([Sport].self, from: data)
         else { throw FetchError.noData }
-        print(sportData)
+//        print(sportData)
 
         return sportData
     }
